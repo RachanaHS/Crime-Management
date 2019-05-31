@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.column,.header{
+    width: 100%;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+  }
+ .header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+#btn{
+	padding:15px;
+	margin-left:39%;
+}
+#reg
+{
+	text-align:center;
+	color:hotpink;
+	font-size:20px;
+}
+#form
+{
+	border:solid gray 1px;
+	border-radius:5px;
+	background:white;
+	padding:50px;
+	opacity:0.75;
+	filter:alpha(opacity=50);
+}
+</style>
+</head>
+<body>
+	<div class="header">
+  <h1>PLEASE LOGIN</h1>
+	</div>
+	<p>
+	<div id="form">
+		<form action="login.php" method="post">
+			<p>
+				<label><b>Username:</b></label>
+				<input type="text" id="username" name="username"/>
+			</p>
+			<p>
+				<label><b>Password:&nbsp;</b></label>
+				<input type="password" id="password" name="password"/>
+			</p>
+			<p>
+				<label><b>Email:&nbsp;&nbsp;&emsp; </b></label>
+				<input type="email" id="email" name="email"/>
+			</p>
+			<p>
+				<label><b>Ph.number:</b></label>
+				<input type="text" id="phone" name="phone"/>
+			</p>
+			<p>
+				<input type="submit" id="btn" value="Login" name="submit" />
+			</p>
+			<p>
+			<a href="registration.html" id="reg"><b>New User?</b><br/>Click here to Register</b></a>
+	</p>
+		</form>
+	</div>
+	</p>
+</body>
+</html>
